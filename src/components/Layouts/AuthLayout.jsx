@@ -2,8 +2,8 @@ import Logo from "../Elements/Logo"
 import { useContext } from "react";
 import { NotifContext } from "../../context/notifContext";
 import SimpleBackdrop from "../Elements/Backdrop";
-import CustomSnackbar from "../Elements/Snackbar";
-import * as motion from 'motion/react-client'
+import CustomSnackbar from "../Elements/SnackBar";
+import * as motion from 'motion/react-client' 
 import { DarkModeContext } from "../../context/darkModeContext";
 
 function AuthLayout(props) {
