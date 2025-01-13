@@ -4,7 +4,7 @@ import { ThemeContext } from "../../context/themeContext";
 import { useContext } from "react";
 import { NotifContext } from "../../context/notifContext";
 import SimpleBackdrop from "../Elements/Backdrop";
-import CustomSnackbar from "../Elements/Snackbar";
+import CustomSnackbar from "../Elements/SnackBar";
 import { DarkModeContext } from "../../context/darkModeContext";
 
 const MainLayout = (props) => {
