@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+* {
+    scroll-behavior: smooth;
+}
+
+:root{
+    --normal-text: 1rem;
+    --dark-text: #0c0c0c;
+
+    --low-fidelity: #e7e7e7;
+
+    /* BUTTON */
+    --button-primary: #24a0ed;
+    --button-primary-hover: #0082d3;
+    --button-secondary: rgb(255, 255, 95);
+    --button-secondary-hover: rgb(250, 250, 52);
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    color: var(--dark-text);
+    font-size: 8px;
+}
+
+h1{
+    font-size: calc(var(--normal-text)*2.5);
+    color: var(--dark-text);
+    margin: 0;
+}
+
+p{
+    font-size: var(--normal-text);
+}
+
+
+section.main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button{
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+button.btn{
+    background-color: var(--low-fidelity);
+    padding: 10px 24px;
+    min-width: 100px;
+    border: none;
+    border-radius: 6px;
+}
+
+button.btn-primary{
+    background-color: var(--button-primary);
+    transition-duration: 200ms;
+    color: #fff;
+}
+
+button.btn-secondary{
+    transition-duration: 200ms;
+    color: #000;
+    background-color: var(--button-secondary);
+}
+
+button.btn-primary:hover{
+    transition-duration: 200ms;
+    background-color: var(--button-primary-hover);
+}
+
+button.btn-secondary:hover{
+    transition-duration: 200ms;
+    background-color: var(--button-secondary-hover);
+}
+
+.button-wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.flex-col{
+    flex-direction: column !important;
+}
+.flex-row{
+    flex-direction: row !important;
+}
